@@ -1,19 +1,15 @@
 import random
-lst = []
+
+print ("начальный списoк" , lst)
+
 for i in range(10):
 
         lst.append(random.randint(0, 100))
 
-lst2 = lst.copy()
+max_index = lst.index(max(numbers))# находим индкс самого большого и  самого маленкого
+min_index = lst.index(min(numbers))
 
-maximum = lst.index(max(lst))
+lst[max_index], lst[min_index] # меняем местами
+lst[min_index], lst[max_index]
 
-minimum = lst.index(min(lst))
-
-lst2[maximum] = min(lst)
-
-
-lst2[minimum] = max(lst)
-
-print(lst)
-print(lst2)
+print ("измененный список:" ,  lst)
