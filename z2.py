@@ -1,8 +1,6 @@
-commit
 lst = []
 
-for i in range(1, 102):
-    if i % 2 == 0:
-            lst.append(i)
-
-    print(lst)
+for i in range(2, 102, 2):
+    lst.append(i)
+    
+print(lst)
