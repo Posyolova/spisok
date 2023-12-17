@@ -3,7 +3,7 @@ c = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13]
 lst = []
 
 for i in v:
-        if i in v and i in c:
+        if i in v and i in c: # создаем список состоящий из общих элементов
             lst.append(i)
 
-print(lst)
+print(lst) 
