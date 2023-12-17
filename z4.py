@@ -4,11 +4,11 @@ lst = []
 for i in range(10):
         lst.append(random.randint(0, 100))
 
-summ = 0
-proizv = 1
+sum_lst = sum(lst)
 
-for i in lst:
-        summ += i
-        proizv *= i
+proizv_lst = 1 #произведение элементов списка
+for number in lst:
+    proizv_lst *= number
 
-print(summ, '\n', proizv)
+print("сумма:", sum_lst)
+print("произведение:" , proizv_lst)
