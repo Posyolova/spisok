@@ -1,23 +1,12 @@
-n = int(input('введите число- '))
-lst = []
-lst2 = []
+n = int(input('введите  количество чисел - ')) # считываем количество чисел n с помощью unput
 
-for i in range(n):
+numbers = []
+# заполняем список из n чисел
+for i in range(n) :
+    num = int(input(" введите число -"))#считываем каждое число с помощью input
+    numbers.append(num)# добавляем в список с помощью append
 
-        chislo = int(input('число '))
+    # удаляем элементы по нечетным
+del numbers[1::2]
 
-        lst.append(chislo)
-
-for i in range(len(lst)):
-
-        if i % 2 != 0:
-
-            lst2.append(i)
-
-
-
-for i in lst2:
-
-        lst.pop(i)
-
-print(lst)
+print ("измененный список:" , numbers)
