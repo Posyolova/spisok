@@ -10,7 +10,7 @@ print(lst)
 
 for i in lst:
 
-        if lst.count(i) > 1:
+        if lst.count(i) > 1: #проверка на наличие повторяющихся элементов
 
 
             print(i)
